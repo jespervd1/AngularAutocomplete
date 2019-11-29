@@ -11,6 +11,7 @@ import {map, startWith} from 'rxjs/operators';
 export class AppComponent {
   title = 'AutocompleteAngular';
   MyControl = new FormControl();
+  options: string[] = [''];
   filteredOptions: Observable<string[]>;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
